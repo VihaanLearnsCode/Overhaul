@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef } from 'react'
 
 const PlantBackground = () => {
-  const [plants, setPlants] = useState([])
+  const canvasRef = useRef(null)
 
   // L-System rules for different plant types
   const lSystemRules = {
@@ -60,7 +60,7 @@ const PlantBackground = () => {
     ctx.strokeStyle = plantType === 'tree' ? 'rgba(0, 77, 64, 0.9)' :
                      plantType === 'fern' ? 'rgba(0, 105, 92, 0.9)' :
                      'rgba(0, 128, 128, 0.9)'
-    ctx.lineWidth = 1
+    ctx.lineWidth = 2
 
     for (let char of lSystem) {
       if (char === 'F') {
@@ -92,26 +92,20 @@ const PlantBackground = () => {
   }
 
   useEffect(() => {
-    const canvas = document.createElement('canvas')
+    const canvas = canvasRef.current
+    if (!canvas) return
+
     const ctx = canvas.getContext('2d')
+    if (!ctx) return
     
     // Set canvas size
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
     
-    // Position canvas as background
-    canvas.style.position = 'fixed'
-    canvas.style.top = '0'
-    canvas.style.left = '0'
-    canvas.style.zIndex = '-1'
-    canvas.style.opacity = '0.7'
-    canvas.style.pointerEvents = 'none'
-    
     // Clear and draw new plants
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     
     const plantTypes = Object.keys(lSystemRules)
-    const newPlants = []
     
     // Generate 3-5 random plants
     const numPlants = Math.floor(Math.random() * 3) + 3
@@ -131,32 +125,54 @@ const PlantBackground = () => {
       ctx.scale(scale, scale)
       drawPlant(ctx, lSystem, 0, 0, system.angle, system.length, plantType)
       ctx.restore()
-      
-      newPlants.push({ x, y, type: plantType, scale })
     }
-    
-    setPlants(newPlants)
-    
-    // Add to DOM
-    document.body.appendChild(canvas)
     
     // Handle resize
     const handleResize = () => {
       canvas.width = window.innerWidth
       canvas.height = window.innerHeight
+      // Redraw plants on resize
+      setTimeout(() => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        for (let i = 0; i < numPlants; i++) {
+          const plantType = plantTypes[Math.floor(Math.random() * plantTypes.length)]
+          const system = lSystemRules[plantType]
+          const lSystem = generateLSystem(system.axiom, system.rules, system.iterations)
+          const x = Math.random() * canvas.width
+          const y = canvas.height - 50 - Math.random() * 200
+          const scale = 0.5 + Math.random() * 1.5
+          
+          ctx.save()
+          ctx.translate(x, y)
+          ctx.scale(scale, scale)
+          drawPlant(ctx, lSystem, 0, 0, system.angle, system.length, plantType)
+          ctx.restore()
+        }
+      }, 100)
     }
     
     window.addEventListener('resize', handleResize)
     
     return () => {
       window.removeEventListener('resize', handleResize)
-      if (document.body.contains(canvas)) {
-        document.body.removeChild(canvas)
-      }
     }
   }, [])
 
-  return null // This component doesn't render anything, just manages the canvas
+  return (
+    <canvas
+      ref={canvasRef}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        zIndex: -1,
+        opacity: 0.7,
+        pointerEvents: 'none'
+      }}
+    />
+  )
 }
 
 export default PlantBackground
