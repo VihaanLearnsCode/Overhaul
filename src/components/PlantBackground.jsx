@@ -90,6 +90,50 @@ const PlantBackground = () => {
       angle: 45,
       length: 6,
       iterations: 3
+    },
+    // Seashell L-Systems
+    spiral: {
+      axiom: 'F',
+      rules: {
+        'F': 'F+F-F',
+        '+': '+',
+        '-': '-'
+      },
+      angle: 60,
+      length: 3,
+      iterations: 6
+    },
+    nautilus: {
+      axiom: 'F',
+      rules: {
+        'F': 'F[+F]F[-F]',
+        '[': '[',
+        ']': ']'
+      },
+      angle: 90,
+      length: 2,
+      iterations: 5
+    },
+    conch: {
+      axiom: 'X',
+      rules: {
+        'X': 'F+X+',
+        'F': 'F-F'
+      },
+      angle: 45,
+      length: 2,
+      iterations: 6
+    },
+    ammonite: {
+      axiom: 'F',
+      rules: {
+        'F': 'F+F--F+F',
+        '+': '+',
+        '-': '-'
+      },
+      angle: 120,
+      length: 2,
+      iterations: 4
     }
   }
 
@@ -144,11 +188,11 @@ const PlantBackground = () => {
   }
 
   const getRandomGreenColor = () => {
-    const greenShades = [
+    const colorShades = [
+      // Greens
       'rgba(34, 197, 94, 0.9)',   // Green-500
       'rgba(22, 163, 74, 0.9)',   // Green-600
       'rgba(21, 128, 61, 0.9)',   // Green-700
-      'rgba(20, 83, 45, 0.9)',    // Green-800
       'rgba(5, 150, 105, 0.9)',   // Emerald-600
       'rgba(16, 185, 129, 0.9)',  // Emerald-500
       'rgba(6, 95, 70, 0.9)',     // Emerald-700
@@ -156,27 +200,30 @@ const PlantBackground = () => {
       'rgba(101, 163, 13, 0.9)',  // Lime-600
       'rgba(74, 222, 128, 0.9)',  // Green-400
       'rgba(134, 239, 172, 0.9)', // Green-300
-      'rgba(34, 197, 94, 0.7)',   // Lighter green-500
-      'rgba(22, 163, 74, 0.8)',   // Medium green-600
-      'rgba(5, 87, 37, 0.9)',     // Forest green-900
-      'rgba(6, 78, 59, 0.9)',     // Dark forest green-950
       'rgba(4, 120, 87, 0.9)',    // Teal-700
-      'rgba(1, 99, 72, 0.9)',     // Teal-800
       'rgba(20, 184, 166, 0.9)',  // Teal-500
       'rgba(15, 118, 110, 0.9)',  // Teal-600
-      'rgba(13, 148, 136, 0.9)',  // Teal-600
-      'rgba(17, 94, 89, 0.9)',    // Teal-700
-      'rgba(19, 78, 74, 0.9)',    // Teal-800
       'rgba(54, 83, 20, 0.9)',    // Olive-700
       'rgba(85, 111, 38, 0.9)',   // Lime-600
-      'rgba(61, 80, 27, 0.9)',    // Lime-700
-      'rgba(40, 54, 24, 0.9)',    // Lime-800
-      'rgba(26, 35, 16, 0.9)',    // Lime-900
-      'rgba(55, 65, 81, 0.9)',    // Slate-700 (for dark contrast)
-      'rgba(71, 85, 105, 0.9)',   // Slate-600 (for dark contrast)
-      'rgba(31, 41, 55, 0.9)',    // Slate-800 (very dark)
+      // Blues
+      'rgba(59, 130, 246, 0.9)',  // Blue-500
+      'rgba(37, 99, 235, 0.9)',   // Blue-600
+      'rgba(29, 78, 216, 0.9)',   // Blue-700
+      'rgba(30, 64, 175, 0.9)',   // Blue-800
+      'rgba(147, 197, 253, 0.9)', // Blue-300
+      'rgba(96, 165, 250, 0.9)',  // Blue-400
+      'rgba(6, 182, 212, 0.9)',   // Cyan-500
+      'rgba(8, 145, 178, 0.9)',   // Cyan-600
+      'rgba(14, 116, 144, 0.9)',  // Cyan-700
+      'rgba(21, 94, 117, 0.9)',   // Cyan-800
+      'rgba(125, 211, 252, 0.9)', // Sky-300
+      'rgba(56, 189, 248, 0.9)',  // Sky-400
+      'rgba(14, 165, 233, 0.9)',  // Sky-500
+      'rgba(2, 132, 199, 0.9)',   // Sky-600
+      'rgba(3, 105, 161, 0.9)',   // Sky-700
+      'rgba(7, 89, 133, 0.9)',    // Sky-800
     ]
-    return greenShades[Math.floor(Math.random() * greenShades.length)]
+    return colorShades[Math.floor(Math.random() * colorShades.length)]
   }
 
   const checkOverlap = (newX, newY, newScale, existingPlants) => {
@@ -211,8 +258,8 @@ const PlantBackground = () => {
     
     const plantTypes = Object.keys(lSystemRules)
     
-    // Generate 10-15 random plants with no overlap
-    const maxPlants = Math.floor(Math.random() * 6) + 10
+    // Generate 12-18 random plants with no overlap
+    const maxPlants = Math.floor(Math.random() * 7) + 12
     const placedPlants = []
     
     for (let i = 0; i < maxPlants; i++) {
