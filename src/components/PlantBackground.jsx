@@ -57,9 +57,9 @@ const PlantBackground = () => {
     let y = startY
     let currentAngle = -90 // Start pointing up
 
-    ctx.strokeStyle = plantType === 'tree' ? 'rgba(34, 197, 94, 0.3)' :
-                     plantType === 'fern' ? 'rgba(132, 204, 22, 0.3)' :
-                     'rgba(59, 130, 246, 0.3)'
+    ctx.strokeStyle = plantType === 'tree' ? 'rgba(34, 197, 94, 0.8)' :
+                     plantType === 'fern' ? 'rgba(132, 204, 22, 0.8)' :
+                     'rgba(59, 130, 246, 0.8)'
     ctx.lineWidth = 1
 
     for (let char of lSystem) {
@@ -104,7 +104,7 @@ const PlantBackground = () => {
     canvas.style.top = '0'
     canvas.style.left = '0'
     canvas.style.zIndex = '-1'
-    canvas.style.opacity = '0.15'
+    canvas.style.opacity = '0.4'
     canvas.style.pointerEvents = 'none'
     
     // Clear and draw new plants

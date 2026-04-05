@@ -61,9 +61,9 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="gradient-text">Vihaan Khare</span>
-          </h1>
+          <span className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
+            Hi, I'm <span className="text-blue-600">Vihaan Khare</span>
+          </span>
           <p className="text-xl md:text-2xl text-gray-700 mb-8">
             Full-Stack Developer & Creative Technologist
           </p>
