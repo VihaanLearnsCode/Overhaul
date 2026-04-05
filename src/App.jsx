@@ -61,20 +61,20 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <span className="text-5xl md:text-7xl font-bold text-white mb-6 nice-font">
               Hi, I'm <span className="hover:text-sky-200 transition-colors cursor-pointer">Vihaan Khare</span>
             </span>
-            <p className="text-xl md:text-2xl text-stone-800 mb-8 nice-font">
+            <p className="text-xl md:text-2xl text-taupe-300 mb-8 nice-font">
               Full-Stack Developer & Creative Technologist
             </p>
-            <p className="text-lg text-stone-700 mb-8 max-w-2xl mx-auto nice-font">
+            <p className="text-lg text-taupe-300 mb-8 max-w-2xl mx-auto nice-font">
               I build beautiful, functional web applications with modern technologies. 
               Passionate about creating exceptional user experiences and solving complex problems.
             </p>
           </div>
           
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="#projects" 
               className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl nice-font"
@@ -83,13 +83,7 @@ function App() {
             </a>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
-              onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
-            >
-              Curious about the background? Click here!
-            </button>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button 
               className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
               onClick={() => window.location.reload()}
@@ -97,40 +91,50 @@ function App() {
               Click here to refresh trees!
             </button>
           </div>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
+            <button 
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
+              onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
+            >
+              Curious about the background? Click here!
+            </button>
+          </div>
+          
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-16 nice-font">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-stone-800 mb-6 nice-font">
+                <p className="text-lg text-taupe-300 mb-6 nice-font">
                   I'm a passionate developer with expertise in modern web technologies. 
                   I love turning ideas into reality through clean, efficient code and thoughtful design.
                 </p>
-                <p className="text-lg text-stone-800 mb-8 nice-font">
+                <p className="text-lg text-taupe-300 mb-8 nice-font">
                   My journey in tech started with curiosity and has evolved into a career 
                   focused on building impactful digital experiences.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-stone-300/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-                    <h3 className="text-stone-900 font-semibold mb-2 nice-font">Frontend</h3>
-                    <p className="text-stone-700 text-sm nice-font">React, Vue, TypeScript, Tailwind CSS</p>
+                    <h3 className="text-taupe-300 font-semibold mb-2 nice-font">Frontend</h3>
+                    <p className="text-taupe-300 text-sm nice-font">React, Vue, TypeScript, Tailwind CSS</p>
                   </div>
                   <div className="bg-stone-300/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-                    <h3 className="text-stone-900 font-semibold mb-2 nice-font">Backend</h3>
-                    <p className="text-stone-700 text-sm nice-font">Node.js, Python, PostgreSQL, MongoDB</p>
+                    <h3 className="text-taupe-300 font-semibold mb-2 nice-font">Backend</h3>
+                    <p className="text-taupe-300 text-sm nice-font">Node.js, Python, PostgreSQL, MongoDB</p>
                   </div>
                   <div className="bg-stone-300/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-                    <h3 className="text-stone-900 font-semibold mb-2 nice-font">Tools</h3>
-                    <p className="text-stone-700 text-sm nice-font">Git, Docker, AWS, Vercel</p>
+                    <h3 className="text-taupe-300 font-semibold mb-2 nice-font">Tools</h3>
+                    <p className="text-taupe-300 text-sm nice-font">Git, Docker, AWS, Vercel</p>
                   </div>
                   <div className="bg-stone-300/80 backdrop-blur-sm p-4 rounded-lg shadow-sm">
-                    <h3 className="text-stone-900 font-semibold mb-2 nice-font">Design</h3>
-                    <p className="text-stone-700 text-sm nice-font">Figma, Adobe XD, Responsive Design</p>
+                    <h3 className="text-taupe-300 font-semibold mb-2 nice-font">Design</h3>
+                    <p className="text-taupe-300 text-sm nice-font">Figma, Adobe XD, Responsive Design</p>
                   </div>
                 </div>
               </div>
@@ -147,19 +151,19 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-16 nice-font">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-stone-300/90 backdrop-blur-sm rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
                 <div className="h-40 bg-gradient-to-br from-stone-500 to-stone-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">🚀</span>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2 nice-font">Project Alpha</h3>
-                <p className="text-stone-800 mb-4 nice-font">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
+                <h3 className="text-xl font-semibold text-taupe-300 mb-2 nice-font">Project Alpha</h3>
+                <p className="text-taupe-300 mb-4 nice-font">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-stone-500 text-white px-2 py-1 rounded-full nice-font">React</span>
-                  <span className="text-xs bg-stone-600 text-white px-2 py-1 rounded-full nice-font">Node.js</span>
-                  <span className="text-xs bg-stone-500 text-white px-2 py-1 rounded-full nice-font">MongoDB</span>
+                  <span className="text-xs bg-stone-500 text-taupe-300 px-2 py-1 rounded-full nice-font">React</span>
+                  <span className="text-xs bg-stone-600 text-taupe-300 px-2 py-1 rounded-full nice-font">Node.js</span>
+                  <span className="text-xs bg-stone-500 text-taupe-300 px-2 py-1 rounded-full nice-font">MongoDB</span>
                 </div>
               </div>
               
@@ -167,11 +171,11 @@ function App() {
                 <div className="h-40 bg-gradient-to-br from-stone-500 to-stone-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">📱</span>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2 nice-font">Mobile App</h3>
-                <p className="text-stone-800 mb-4 nice-font">Cross-platform mobile application with offline support and push notifications.</p>
+                <h3 className="text-xl font-semibold text-taupe-300 mb-2 nice-font">Mobile App</h3>
+                <p className="text-taupe-300 mb-4 nice-font">Cross-platform mobile application with offline support and push notifications.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-stone-500 text-white px-2 py-1 rounded-full nice-font">React Native</span>
-                  <span className="text-xs bg-stone-600 text-white px-2 py-1 rounded-full nice-font">Firebase</span>
+                  <span className="text-xs bg-stone-500 text-taupe-300 px-2 py-1 rounded-full nice-font">React Native</span>
+                  <span className="text-xs bg-stone-600 text-taupe-300 px-2 py-1 rounded-full nice-font">Firebase</span>
                 </div>
               </div>
               
@@ -179,12 +183,12 @@ function App() {
                 <div className="h-40 bg-gradient-to-br from-stone-500 to-stone-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">🤖</span>
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2 nice-font">AI Platform</h3>
-                <p className="text-stone-800 mb-4 nice-font">Machine learning platform for data analysis and predictive modeling.</p>
+                <h3 className="text-xl font-semibold text-taupe-300 mb-2 nice-font">AI Platform</h3>
+                <p className="text-taupe-300 mb-4 nice-font">Machine learning platform for data analysis and predictive modeling.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-stone-500 text-white px-2 py-1 rounded-full nice-font">Python</span>
-                  <span className="text-xs bg-stone-600 text-white px-2 py-1 rounded-full nice-font">TensorFlow</span>
-                  <span className="text-xs bg-stone-500 text-white px-2 py-1 rounded-full nice-font">FastAPI</span>
+                  <span className="text-xs bg-stone-500 text-taupe-300 px-2 py-1 rounded-full nice-font">Python</span>
+                  <span className="text-xs bg-stone-600 text-taupe-300 px-2 py-1 rounded-full nice-font">TensorFlow</span>
+                  <span className="text-xs bg-stone-500 text-taupe-300 px-2 py-1 rounded-full nice-font">FastAPI</span>
                 </div>
               </div>
             </div>
@@ -195,19 +199,19 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-8 nice-font">Let's Connect</h2>
-            <p className="text-xl text-stone-800 mb-12 nice-font">
+            <p className="text-xl text-taupe-300 mb-12 nice-font">
               I'm always interested in hearing about new projects and opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <a href="mailto:vihaan@example.com" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-stone-900 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
+              <a href="mailto:vihaan@example.com" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-taupe-300 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
                 📧 vihaan@example.com
               </a>
-              <a href="https://github.com/VihaanLearnsCode" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-stone-900 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
+              <a href="https://github.com/VihaanLearnsCode" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-taupe-300 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
                 💻 github.com/VihaanLearnsCode
               </a>
-              <a href="https://linkedin.com/in/vihaank" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-stone-900 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
+              <a href="https://linkedin.com/in/vihaank" className="bg-stone-300/90 backdrop-blur-sm border border-stone-400 px-6 py-3 rounded-lg text-taupe-300 hover:bg-stone-400/90 transition-all shadow-sm nice-font">
                 💼 linkedin.com/in/vihaank
               </a>
             </div>
