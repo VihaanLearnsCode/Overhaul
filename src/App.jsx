@@ -95,39 +95,41 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-gray-700 mb-6">
-                I'm a passionate developer with expertise in modern web technologies. 
-                I love turning ideas into reality through clean, efficient code and thoughtful design.
-              </p>
-              <p className="text-lg text-gray-700 mb-8">
-                My journey in tech started with curiosity and has evolved into a career 
-                focused on building impactful digital experiences.
-              </p>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white/80 backdrop-blur-sm border border-gray-200 p-4 rounded-lg shadow-sm">
-                  <h3 className="text-blue-600 font-semibold mb-2">Frontend</h3>
-                  <p className="text-gray-600 text-sm">React, Vue, TypeScript, Tailwind CSS</p>
-                </div>
-                <div className="bg-white/80 backdrop-blur-sm border border-gray-200 p-4 rounded-lg shadow-sm">
-                  <h3 className="text-blue-600 font-semibold mb-2">Backend</h3>
-                  <p className="text-gray-600 text-sm">Node.js, Python, PostgreSQL, MongoDB</p>
-                </div>
-                <div className="bg-white/80 backdrop-blur-sm border border-gray-200 p-4 rounded-lg shadow-sm">
-                  <h3 className="text-blue-600 font-semibold mb-2">Tools</h3>
-                  <p className="text-gray-600 text-sm">Git, Docker, AWS, Vercel</p>
-                </div>
-                <div className="bg-white/80 backdrop-blur-sm border border-gray-200 p-4 rounded-lg shadow-sm">
-                  <h3 className="text-blue-600 font-semibold mb-2">Design</h3>
-                  <p className="text-gray-600 text-sm">Figma, Adobe XD, Responsive Design</p>
+          <div className="bg-amber-900/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-800/50">
+            <h2 className="text-4xl font-bold text-amber-50 text-center mb-16 nice-font">About Me</h2>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-lg text-amber-100 mb-6 nice-font">
+                  I'm a passionate developer with expertise in modern web technologies. 
+                  I love turning ideas into reality through clean, efficient code and thoughtful design.
+                </p>
+                <p className="text-lg text-amber-100 mb-8 nice-font">
+                  My journey in tech started with curiosity and has evolved into a career 
+                  focused on building impactful digital experiences.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Frontend</h3>
+                    <p className="text-amber-200 text-sm nice-font">React, Vue, TypeScript, Tailwind CSS</p>
+                  </div>
+                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Backend</h3>
+                    <p className="text-amber-200 text-sm nice-font">Node.js, Python, PostgreSQL, MongoDB</p>
+                  </div>
+                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Tools</h3>
+                    <p className="text-amber-200 text-sm nice-font">Git, Docker, AWS, Vercel</p>
+                  </div>
+                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Design</h3>
+                    <p className="text-amber-200 text-sm nice-font">Figma, Adobe XD, Responsive Design</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full flex items-center justify-center shadow-xl">
-                <span className="text-6xl">👨‍💻</span>
+              <div className="flex justify-center">
+                <div className="w-64 h-64 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center shadow-xl">
+                  <span className="text-6xl">👨‍💻</span>
+                </div>
               </div>
             </div>
           </div>
@@ -137,43 +139,45 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">Featured Projects</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-              <div className="h-40 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-4xl">🚀</span>
+          <div className="bg-amber-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-700/50">
+            <h2 className="text-4xl font-bold text-amber-50 text-center mb-16 nice-font">Featured Projects</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">🚀</span>
+                </div>
+                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">Project Alpha</h3>
+                <p className="text-amber-100 mb-4 nice-font">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">React</span>
+                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">Node.js</span>
+                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">MongoDB</span>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Project Alpha</h3>
-              <p className="text-gray-700 mb-4">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">React</span>
-                <span className="text-xs bg-green-100 text-green-700 px-2 py-1 rounded-full">Node.js</span>
-                <span className="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full">MongoDB</span>
+              
+              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">📱</span>
+                </div>
+                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">Mobile App</h3>
+                <p className="text-amber-100 mb-4 nice-font">Cross-platform mobile application with offline support and push notifications.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">React Native</span>
+                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">Firebase</span>
+                </div>
               </div>
-            </div>
-            
-            <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-              <div className="h-40 bg-gradient-to-br from-green-400 to-teal-400 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-4xl">📱</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Mobile App</h3>
-              <p className="text-gray-700 mb-4">Cross-platform mobile application with offline support and push notifications.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">React Native</span>
-                <span className="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full">Firebase</span>
-              </div>
-            </div>
-            
-            <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-              <div className="h-40 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg mb-4 flex items-center justify-center">
-                <span className="text-4xl">🤖</span>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">AI Platform</h3>
-              <p className="text-gray-700 mb-4">Machine learning platform for data analysis and predictive modeling.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded-full">Python</span>
-                <span className="text-xs bg-yellow-100 text-yellow-700 px-2 py-1 rounded-full">TensorFlow</span>
-                <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full">FastAPI</span>
+              
+              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+                  <span className="text-4xl">🤖</span>
+                </div>
+                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">AI Platform</h3>
+                <p className="text-amber-100 mb-4 nice-font">Machine learning platform for data analysis and predictive modeling.</p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">Python</span>
+                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">TensorFlow</span>
+                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">FastAPI</span>
+                </div>
               </div>
             </div>
           </div>
@@ -182,37 +186,39 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Let's Connect</h2>
-          <p className="text-xl text-gray-700 mb-12">
-            I'm always interested in hearing about new projects and opportunities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <a href="mailto:vihaan@example.com" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
-              📧 vihaan@example.com
-            </a>
-            <a href="https://github.com/VihaanLearnsCode" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
-              💻 github.com/VihaanLearnsCode
-            </a>
-            <a href="https://linkedin.com/in/vihaank" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
-              💼 linkedin.com/in/vihaank
-            </a>
-          </div>
-          <div className="flex justify-center gap-4">
-            <a href="https://github.com/VihaanLearnsCode" className="w-12 h-12 bg-gray-700 hover:bg-gray-800 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
-              G
-            </a>
-            <a href="https://linkedin.com/in/vihaank" className="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
-              in
-            </a>
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-amber-700/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-600/50">
+            <h2 className="text-4xl font-bold text-amber-50 text-center mb-8 nice-font">Let's Connect</h2>
+            <p className="text-xl text-amber-100 mb-12 nice-font">
+              I'm always interested in hearing about new projects and opportunities.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+              <a href="mailto:vihaan@example.com" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+                📧 vihaan@example.com
+              </a>
+              <a href="https://github.com/VihaanLearnsCode" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+                💻 github.com/VihaanLearnsCode
+              </a>
+              <a href="https://linkedin.com/in/vihaank" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+                💼 linkedin.com/in/vihaank
+              </a>
+            </div>
+            <div className="flex justify-center gap-4">
+              <a href="https://github.com/VihaanLearnsCode" className="w-12 h-12 bg-amber-500 hover:bg-amber-400 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
+                G
+              </a>
+              <a href="https://linkedin.com/in/vihaank" className="w-12 h-12 bg-amber-600 hover:bg-amber-500 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
+                in
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-white/80 backdrop-blur-sm border-t border-gray-200 py-8 px-4">
+      <footer className="bg-amber-600/80 backdrop-blur-sm border-t border-amber-500 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-gray-600">
+          <p className="text-amber-50 nice-font">
             © 2026 Vihaan Khare
           </p>
         </div>
