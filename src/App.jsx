@@ -20,7 +20,7 @@ function App() {
             {/* Desktop Menu */} 
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a href="#home" className="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                <a href="#home" className="text-gray-900 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                 <a href="#about" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
                 <a href="#projects" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
                 <a href="#contact" className="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
@@ -49,7 +49,7 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden glass-effect">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a href="#home" className="text-gray-900 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+              <a href="#home" className="text-gray-900 hover:text-green-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
               <a href="#about" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
               <a href="#projects" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
               <a href="#contact" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
@@ -62,7 +62,7 @@ function App() {
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
           <span className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-blue-600">Vihaan Khare</span>
+            Hi, I'm <span className="text-green-600">Vihaan Khare</span>
           </span>
           <p className="text-xl md:text-2xl text-gray-700 mb-8">
             Full-Stack Developer & Creative Technologist
@@ -74,7 +74,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#projects" 
-              className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               View My Work
             </a>
