@@ -77,7 +77,7 @@ function App() {
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="#projects" 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-slate-500 font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl nice-font"
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl nice-font"
             >
               View my work
             </a>
@@ -85,7 +85,7 @@ function App() {
           
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <button 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-slate-500 font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
               onClick={() => window.location.reload()}
             >
               Visit a new forest 🌲
@@ -94,7 +94,7 @@ function App() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <button 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-slate-500 font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
               onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
             >
               Curious about the background? Click here!
