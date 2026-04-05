@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css'
-import PlantBackground from './components/PlantBackground'
+import PlantBackground from './components/PlantBackground';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -239,6 +240,7 @@ function App() {
           </p>
         </div>
       </footer>
+      <Analytics />
     </div>
     </>
   )
