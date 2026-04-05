@@ -62,7 +62,7 @@ function App() {
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
           <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
-            <span className="text-5xl md:text-7xl font-bold text-white mb-6 nice-font">
+            <span className="text-5xl md:text-7xl font-bold text-slate-500 mb-6 nice-font">
               Hi, I'm <span className="hover:text-sky-200 transition-colors cursor-pointer">Vihaan Khare</span>
             </span>
             <p className="text-xl md:text-2xl text-taupe-300 mb-8 nice-font">
