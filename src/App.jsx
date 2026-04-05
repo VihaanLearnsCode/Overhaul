@@ -61,16 +61,25 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <span className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-            Hi, I'm <span className="text-green-600">Vihaan Khare</span>
-          </span>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8">
-            Full-Stack Developer & Creative Technologist
-          </p>
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
-            I build beautiful, functional web applications with modern technologies. 
-            Passionate about creating exceptional user experiences and solving complex problems.
-          </p>
+          <div className="bg-slate-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-slate-700/50">
+            <span className="text-5xl md:text-7xl font-bold text-white mb-6">
+              Hi, I'm <span className="text-green-400">Vihaan Khare</span>
+            </span>
+            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+              Full-Stack Developer & Creative Technologist
+            </p>
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+              I build beautiful, functional web applications with modern technologies. 
+              Passionate about creating exceptional user experiences and solving complex problems.
+            </p>
+          </div>
+          
+          <button 
+            className="mt-6 bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
+          >
+            Curious about the background? Click here
+          </button>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#projects" 
