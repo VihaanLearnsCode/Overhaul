@@ -93,10 +93,18 @@ const PlantBackground = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current
-    if (!canvas) return
+    if (!canvas) {
+      console.log('Canvas ref not found')
+      return
+    }
 
     const ctx = canvas.getContext('2d')
-    if (!ctx) return
+    if (!ctx) {
+      console.log('Canvas context not found')
+      return
+    }
+    
+    console.log('Drawing plants...')
     
     // Set canvas size
     canvas.width = window.innerWidth
@@ -109,12 +117,14 @@ const PlantBackground = () => {
     
     // Generate 3-5 random plants
     const numPlants = Math.floor(Math.random() * 3) + 3
+    console.log(`Drawing ${numPlants} plants`)
     
     for (let i = 0; i < numPlants; i++) {
       const plantType = plantTypes[Math.floor(Math.random() * plantTypes.length)]
       const system = lSystemRules[plantType]
       
       const lSystem = generateLSystem(system.axiom, system.rules, system.iterations)
+      console.log(`Plant ${i}: ${plantType}, L-system length: ${lSystem.length}`)
       
       const x = Math.random() * canvas.width
       const y = canvas.height - 50 - Math.random() * 200
@@ -126,6 +136,8 @@ const PlantBackground = () => {
       drawPlant(ctx, lSystem, 0, 0, system.angle, system.length, plantType)
       ctx.restore()
     }
+    
+    console.log('Plants drawn successfully')
     
     // Handle resize
     const handleResize = () => {
