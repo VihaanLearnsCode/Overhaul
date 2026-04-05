@@ -74,12 +74,6 @@ function App() {
             </p>
           </div>
           
-          <button 
-            className="mt-6 bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-            onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
-          >
-            Curious about the background? Click here
-          </button>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#projects" 
@@ -87,13 +81,14 @@ function App() {
             >
               View My Work
             </a>
-            <a 
-              href="#contact" 
-              className="border-2 border-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-50 font-bold py-3 px-8 rounded-full transition-all"
-            >
-              Get In Touch
-            </a>
           </div>
+          
+          <button 
+            className="mt-4 bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+            onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
+          >
+            Curious about the background? Click here!
+          </button>
         </div>
       </section>
 
