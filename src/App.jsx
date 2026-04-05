@@ -61,7 +61,7 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <span className="text-5xl md:text-7xl font-bold text-slate-500 mb-6 nice-font">
               Hi, I'm <span className="hover:text-teal-300 transition-colors cursor-pointer">Vihaan Khare</span>
             </span>
@@ -107,7 +107,7 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-slate-500 text-center mb-16 nice-font">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -151,7 +151,7 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-slate-500 text-center mb-16 nice-font">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-stone-300/90 backdrop-blur-sm rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
@@ -199,7 +199,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-stone-450/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
+          <div className="bg-stone-450/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-slate-500 text-center mb-8 nice-font">Let's Connect</h2>
             <p className="text-xl text-taupe-300 mb-12 nice-font">
               I'm always interested in hearing about new projects and opportunities.
