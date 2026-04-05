@@ -83,7 +83,7 @@ function App() {
             </a>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <button 
               className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
               onClick={() => window.location.reload()}
