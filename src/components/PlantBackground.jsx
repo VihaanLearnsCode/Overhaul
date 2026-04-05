@@ -127,7 +127,7 @@ const PlantBackground = () => {
       console.log(`Plant ${i}: ${plantType}, L-system length: ${lSystem.length}`)
       
       const x = Math.random() * canvas.width
-      const y = canvas.height - 50 - Math.random() * 200
+      const y = Math.random() * canvas.height
       const scale = 0.5 + Math.random() * 1.5
       
       ctx.save()
@@ -151,7 +151,7 @@ const PlantBackground = () => {
           const system = lSystemRules[plantType]
           const lSystem = generateLSystem(system.axiom, system.rules, system.iterations)
           const x = Math.random() * canvas.width
-          const y = canvas.height - 50 - Math.random() * 200
+          const y = Math.random() * canvas.height // Random position anywhere on screen
           const scale = 0.5 + Math.random() * 1.5
           
           ctx.save()
