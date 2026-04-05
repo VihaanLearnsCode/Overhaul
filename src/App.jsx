@@ -61,9 +61,9 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <div className="bg-stone-400/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-300/50">
+          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <span className="text-5xl md:text-7xl font-bold text-white mb-6 nice-font">
-              Hi, I'm <span className="hover:text-sky-400 transition-colors cursor-pointer">Vihaan Khare</span>
+              Hi, I'm <span className="hover:text-sky-200 transition-colors cursor-pointer">Vihaan Khare</span>
             </span>
             <p className="text-xl md:text-2xl text-stone-800 mb-8 nice-font">
               Full-Stack Developer & Creative Technologist
@@ -83,19 +83,27 @@ function App() {
             </a>
           </div>
           
-          <button 
-            className="mt-4 bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
-            onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
-          >
-            Curious about the background? Click here!
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button 
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
+              onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
+            >
+              Curious about the background? Click here!
+            </button>
+            <button 
+              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font"
+              onClick={() => window.location.reload()}
+            >
+              Click here to refresh trees!
+            </button>
+          </div>
         </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-400/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-300/50">
+          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-16 nice-font">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
@@ -139,7 +147,7 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-stone-400/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-300/50">
+          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-16 nice-font">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-stone-300/90 backdrop-blur-sm rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
@@ -187,7 +195,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-stone-400/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-300/50">
+          <div className="bg-stone-500/95 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-stone-400/50">
             <h2 className="text-4xl font-bold text-white text-center mb-8 nice-font">Let's Connect</h2>
             <p className="text-xl text-stone-800 mb-12 nice-font">
               I'm always interested in hearing about new projects and opportunities.
