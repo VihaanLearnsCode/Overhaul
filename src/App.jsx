@@ -5,7 +5,7 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-zinc-300 via-fuchsia-900 to-zinc-300">
+    <div className="min-h-screen bg-gradient-to-br from-zinc-300 via-slate-900 to-zinc-300">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass-effect">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
