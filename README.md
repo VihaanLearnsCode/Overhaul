@@ -1,16 +1,33 @@
-# React + Vite
+# Overhaul
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal website built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🎨 Modern gradient design with glass morphism effects
+- 📱 Fully responsive design for all devices
+- ⚡ Fast development with Vite and hot reload
+- 🎯 Smooth scrolling and animations
+- 📧 Contact section with social links
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React 19, Tailwind CSS
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom components
+- **Fonts**: Inter (Google Fonts)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+## Learn More
+
+- [React Documentation](https://react.dev/)
+- [Vite Documentation](https://vite.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
