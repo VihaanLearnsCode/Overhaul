@@ -61,14 +61,14 @@ function App() {
       {/* Hero Section */}
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
-          <div className="bg-slate-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-slate-700/50">
-            <span className="text-5xl md:text-7xl font-bold text-white mb-6 nice-font">
-              Hi, I'm <span className="text-teal-400">Vihaan Khare</span>
+          <div className="bg-teal-900/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-teal-800/50">
+            <span className="text-5xl md:text-7xl font-bold text-teal-50 mb-6 nice-font">
+              Hi, I'm <span className="text-teal-300">Vihaan Khare</span>
             </span>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8 nice-font">
+            <p className="text-xl md:text-2xl text-teal-100 mb-8 nice-font">
               Full-Stack Developer & Creative Technologist
             </p>
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto nice-font">
+            <p className="text-lg text-teal-200 mb-8 max-w-2xl mx-auto nice-font">
               I build beautiful, functional web applications with modern technologies. 
               Passionate about creating exceptional user experiences and solving complex problems.
             </p>
@@ -95,39 +95,39 @@ function App() {
       {/* About Section */}
       <section id="about" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-amber-900/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-800/50">
-            <h2 className="text-4xl font-bold text-amber-50 text-center mb-16 nice-font">About Me</h2>
+          <div className="bg-teal-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-teal-700/50">
+            <h2 className="text-4xl font-bold text-teal-50 text-center mb-16 nice-font">About Me</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-lg text-amber-100 mb-6 nice-font">
+                <p className="text-lg text-teal-100 mb-6 nice-font">
                   I'm a passionate developer with expertise in modern web technologies. 
                   I love turning ideas into reality through clean, efficient code and thoughtful design.
                 </p>
-                <p className="text-lg text-amber-100 mb-8 nice-font">
+                <p className="text-lg text-teal-100 mb-8 nice-font">
                   My journey in tech started with curiosity and has evolved into a career 
                   focused on building impactful digital experiences.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
-                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Frontend</h3>
-                    <p className="text-amber-200 text-sm nice-font">React, Vue, TypeScript, Tailwind CSS</p>
+                  <div className="bg-teal-700/80 backdrop-blur-sm border border-teal-600 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-teal-300 font-semibold mb-2 nice-font">Frontend</h3>
+                    <p className="text-teal-200 text-sm nice-font">React, Vue, TypeScript, Tailwind CSS</p>
                   </div>
-                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
-                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Backend</h3>
-                    <p className="text-amber-200 text-sm nice-font">Node.js, Python, PostgreSQL, MongoDB</p>
+                  <div className="bg-teal-700/80 backdrop-blur-sm border border-teal-600 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-teal-300 font-semibold mb-2 nice-font">Backend</h3>
+                    <p className="text-teal-200 text-sm nice-font">Node.js, Python, PostgreSQL, MongoDB</p>
                   </div>
-                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
-                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Tools</h3>
-                    <p className="text-amber-200 text-sm nice-font">Git, Docker, AWS, Vercel</p>
+                  <div className="bg-teal-700/80 backdrop-blur-sm border border-teal-600 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-teal-300 font-semibold mb-2 nice-font">Tools</h3>
+                    <p className="text-teal-200 text-sm nice-font">Git, Docker, AWS, Vercel</p>
                   </div>
-                  <div className="bg-amber-800/80 backdrop-blur-sm border border-amber-700 p-4 rounded-lg shadow-sm">
-                    <h3 className="text-amber-300 font-semibold mb-2 nice-font">Design</h3>
-                    <p className="text-amber-200 text-sm nice-font">Figma, Adobe XD, Responsive Design</p>
+                  <div className="bg-teal-700/80 backdrop-blur-sm border border-teal-600 p-4 rounded-lg shadow-sm">
+                    <h3 className="text-teal-300 font-semibold mb-2 nice-font">Design</h3>
+                    <p className="text-teal-200 text-sm nice-font">Figma, Adobe XD, Responsive Design</p>
                   </div>
                 </div>
               </div>
               <div className="flex justify-center">
-                <div className="w-64 h-64 bg-gradient-to-br from-amber-600 to-amber-700 rounded-full flex items-center justify-center shadow-xl">
+                <div className="w-64 h-64 bg-gradient-to-br from-teal-600 to-teal-700 rounded-full flex items-center justify-center shadow-xl">
                   <span className="text-6xl">👨‍💻</span>
                 </div>
               </div>
@@ -139,44 +139,44 @@ function App() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-amber-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-700/50">
-            <h2 className="text-4xl font-bold text-amber-50 text-center mb-16 nice-font">Featured Projects</h2>
+          <div className="bg-teal-700/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-teal-600/50">
+            <h2 className="text-4xl font-bold text-teal-50 text-center mb-16 nice-font">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+              <div className="bg-teal-600/90 backdrop-blur-sm border border-teal-500 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">🚀</span>
                 </div>
-                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">Project Alpha</h3>
-                <p className="text-amber-100 mb-4 nice-font">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
+                <h3 className="text-xl font-semibold text-teal-50 mb-2 nice-font">Project Alpha</h3>
+                <p className="text-teal-100 mb-4 nice-font">A modern web application built with React and Node.js, featuring real-time data synchronization.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">React</span>
-                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">Node.js</span>
-                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">MongoDB</span>
+                  <span className="text-xs bg-teal-500 text-teal-50 px-2 py-1 rounded-full nice-font">React</span>
+                  <span className="text-xs bg-teal-600 text-teal-50 px-2 py-1 rounded-full nice-font">Node.js</span>
+                  <span className="text-xs bg-teal-500 text-teal-50 px-2 py-1 rounded-full nice-font">MongoDB</span>
                 </div>
               </div>
               
-              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+              <div className="bg-teal-600/90 backdrop-blur-sm border border-teal-500 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">📱</span>
                 </div>
-                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">Mobile App</h3>
-                <p className="text-amber-100 mb-4 nice-font">Cross-platform mobile application with offline support and push notifications.</p>
+                <h3 className="text-xl font-semibold text-teal-50 mb-2 nice-font">Mobile App</h3>
+                <p className="text-teal-100 mb-4 nice-font">Cross-platform mobile application with offline support and push notifications.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">React Native</span>
-                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">Firebase</span>
+                  <span className="text-xs bg-teal-500 text-teal-50 px-2 py-1 rounded-full nice-font">React Native</span>
+                  <span className="text-xs bg-teal-600 text-teal-50 px-2 py-1 rounded-full nice-font">Firebase</span>
                 </div>
               </div>
               
-              <div className="bg-amber-700/90 backdrop-blur-sm border border-amber-600 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
-                <div className="h-40 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg mb-4 flex items-center justify-center">
+              <div className="bg-teal-600/90 backdrop-blur-sm border border-teal-500 rounded-lg p-6 hover:transform hover:scale-105 transition-all shadow-lg hover:shadow-xl">
+                <div className="h-40 bg-gradient-to-br from-teal-500 to-teal-600 rounded-lg mb-4 flex items-center justify-center">
                   <span className="text-4xl">🤖</span>
                 </div>
-                <h3 className="text-xl font-semibold text-amber-50 mb-2 nice-font">AI Platform</h3>
-                <p className="text-amber-100 mb-4 nice-font">Machine learning platform for data analysis and predictive modeling.</p>
+                <h3 className="text-xl font-semibold text-teal-50 mb-2 nice-font">AI Platform</h3>
+                <p className="text-teal-100 mb-4 nice-font">Machine learning platform for data analysis and predictive modeling.</p>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">Python</span>
-                  <span className="text-xs bg-yellow-700 text-amber-50 px-2 py-1 rounded-full nice-font">TensorFlow</span>
-                  <span className="text-xs bg-amber-600 text-amber-50 px-2 py-1 rounded-full nice-font">FastAPI</span>
+                  <span className="text-xs bg-teal-500 text-teal-50 px-2 py-1 rounded-full nice-font">Python</span>
+                  <span className="text-xs bg-teal-600 text-teal-50 px-2 py-1 rounded-full nice-font">TensorFlow</span>
+                  <span className="text-xs bg-teal-500 text-teal-50 px-2 py-1 rounded-full nice-font">FastAPI</span>
                 </div>
               </div>
             </div>
@@ -187,27 +187,27 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-amber-700/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-amber-600/50">
-            <h2 className="text-4xl font-bold text-amber-50 text-center mb-8 nice-font">Let's Connect</h2>
-            <p className="text-xl text-amber-100 mb-12 nice-font">
+          <div className="bg-teal-600/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-teal-500/50">
+            <h2 className="text-4xl font-bold text-teal-50 text-center mb-8 nice-font">Let's Connect</h2>
+            <p className="text-xl text-teal-100 mb-12 nice-font">
               I'm always interested in hearing about new projects and opportunities.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-              <a href="mailto:vihaan@example.com" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+              <a href="mailto:vihaan@example.com" className="bg-teal-500/90 backdrop-blur-sm border border-teal-400 px-6 py-3 rounded-lg text-teal-50 hover:bg-teal-400/90 transition-all shadow-sm nice-font">
                 📧 vihaan@example.com
               </a>
-              <a href="https://github.com/VihaanLearnsCode" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+              <a href="https://github.com/VihaanLearnsCode" className="bg-teal-500/90 backdrop-blur-sm border border-teal-400 px-6 py-3 rounded-lg text-teal-50 hover:bg-teal-400/90 transition-all shadow-sm nice-font">
                 💻 github.com/VihaanLearnsCode
               </a>
-              <a href="https://linkedin.com/in/vihaank" className="bg-amber-600/90 backdrop-blur-sm border border-amber-500 px-6 py-3 rounded-lg text-amber-50 hover:bg-amber-500/90 transition-all shadow-sm nice-font">
+              <a href="https://linkedin.com/in/vihaank" className="bg-teal-500/90 backdrop-blur-sm border border-teal-400 px-6 py-3 rounded-lg text-teal-50 hover:bg-teal-400/90 transition-all shadow-sm nice-font">
                 💼 linkedin.com/in/vihaank
               </a>
             </div>
             <div className="flex justify-center gap-4">
-              <a href="https://github.com/VihaanLearnsCode" className="w-12 h-12 bg-amber-500 hover:bg-amber-400 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
+              <a href="https://github.com/VihaanLearnsCode" className="w-12 h-12 bg-teal-500 hover:bg-teal-400 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
                 G
               </a>
-              <a href="https://linkedin.com/in/vihaank" className="w-12 h-12 bg-amber-600 hover:bg-amber-500 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
+              <a href="https://linkedin.com/in/vihaank" className="w-12 h-12 bg-teal-600 hover:bg-teal-500 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
                 in
               </a>
             </div>
@@ -216,9 +216,9 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-amber-600/80 backdrop-blur-sm border-t border-amber-500 py-8 px-4">
+      <footer className="bg-teal-500/80 backdrop-blur-sm border-t border-teal-400 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
-          <p className="text-amber-50 nice-font">
+          <p className="text-teal-50 nice-font">
             © 2026 Vihaan Khare
           </p>
         </div>
