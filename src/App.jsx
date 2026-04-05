@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './App.css'
+import PlantBackground from './components/PlantBackground'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+    <>
+      <PlantBackground />
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass-effect">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -187,18 +190,15 @@ function App() {
             <a href="https://github.com/VihaanLearnsCode" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
               💻 github.com/VihaanLearnsCode
             </a>
-            <a href="https://linkedin.com/in/vihaankhare" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
-              💼 linkedin.com/in/vihaankhare
+            <a href="https://linkedin.com/in/vihaank" className="bg-white/90 backdrop-blur-sm border border-gray-200 px-6 py-3 rounded-lg text-gray-900 hover:bg-gray-50 transition-all shadow-sm">
+              💼 linkedin.com/in/vihaank
             </a>
           </div>
           <div className="flex justify-center gap-4">
-            <a href="https://twitter.com/vihaankhare" className="w-12 h-12 bg-blue-500 hover:bg-blue-600 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
-              𝕏
-            </a>
             <a href="https://github.com/VihaanLearnsCode" className="w-12 h-12 bg-gray-700 hover:bg-gray-800 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
               G
             </a>
-            <a href="https://linkedin.com/in/vihaankhare" className="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
+            <a href="https://linkedin.com/in/vihaank" className="w-12 h-12 bg-blue-700 hover:bg-blue-800 rounded-full flex items-center justify-center text-white transition-all shadow-lg">
               in
             </a>
           </div>
@@ -209,11 +209,12 @@ function App() {
       <footer className="bg-white/80 backdrop-blur-sm border-t border-gray-200 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-gray-600">
-            © 2024 Vihaan Khare. Built with React, Vite, and Tailwind CSS.
+            © 2026 Vihaan Khare
           </p>
         </div>
       </footer>
     </div>
+    </>
   )
 }
 
