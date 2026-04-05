@@ -62,13 +62,13 @@ function App() {
       <section id="home" className="pt-16 min-h-screen flex items-center justify-center px-4">
         <div className="text-center max-w-4xl">
           <div className="bg-slate-800/90 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-slate-700/50">
-            <span className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <span className="text-5xl md:text-7xl font-bold text-white mb-6 denali-font">
               Hi, I'm <span className="text-green-400">Vihaan Khare</span>
             </span>
-            <p className="text-xl md:text-2xl text-gray-200 mb-8">
+            <p className="text-xl md:text-2xl text-gray-200 mb-8 denali-font">
               Full-Stack Developer & Creative Technologist
             </p>
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto denali-font">
               I build beautiful, functional web applications with modern technologies. 
               Passionate about creating exceptional user experiences and solving complex problems.
             </p>
