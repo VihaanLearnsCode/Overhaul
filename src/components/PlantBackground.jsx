@@ -90,50 +90,6 @@ const PlantBackground = () => {
       angle: 45,
       length: 6,
       iterations: 3
-    },
-    // Seashell L-Systems
-    spiral: {
-      axiom: 'F',
-      rules: {
-        'F': 'F+F-F',
-        '+': '+',
-        '-': '-'
-      },
-      angle: 60,
-      length: 3,
-      iterations: 6
-    },
-    nautilus: {
-      axiom: 'F',
-      rules: {
-        'F': 'F[+F]F[-F]',
-        '[': '[',
-        ']': ']'
-      },
-      angle: 90,
-      length: 2,
-      iterations: 5
-    },
-    conch: {
-      axiom: 'X',
-      rules: {
-        'X': 'F+X+',
-        'F': 'F-F'
-      },
-      angle: 45,
-      length: 2,
-      iterations: 6
-    },
-    ammonite: {
-      axiom: 'F',
-      rules: {
-        'F': 'F+F--F+F',
-        '+': '+',
-        '-': '-'
-      },
-      angle: 120,
-      length: 2,
-      iterations: 4
     }
   }
 
@@ -258,8 +214,8 @@ const PlantBackground = () => {
     
     const plantTypes = Object.keys(lSystemRules)
     
-    // Generate 12-18 random plants with no overlap
-    const maxPlants = Math.floor(Math.random() * 7) + 12
+    // Generate 10-15 random plants with no overlap
+    const maxPlants = Math.floor(Math.random() * 6) + 10
     const placedPlants = []
     
     for (let i = 0; i < maxPlants; i++) {
