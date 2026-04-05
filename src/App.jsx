@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <PlantBackground />
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
+      <div className="min-h-screen" style={{ backgroundColor: 'transparent' }}>
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass-effect">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
