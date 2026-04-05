@@ -47,7 +47,7 @@ function App() {
         
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden glass-effect">
+          <div className="md:hidden glass-effect backdrop-blur-sm">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a href="#home" className="text-gray-900 hover:text-teal-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
               <a href="#about" className="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
@@ -77,7 +77,7 @@ function App() {
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <a 
               href="#projects" 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl nice-font backdrop-blur-sm"
+              className="bg-white/20 hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl nice-font backdrop-blur-sm"
             >
               View my work
             </a>
@@ -85,7 +85,7 @@ function App() {
           
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <button 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font backdrop-blur-sm"
+              className="bg-white/20 hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font backdrop-blur-sm"
               onClick={() => window.location.reload()}
             >
               Visit a new forest 🌲
@@ -94,7 +94,7 @@ function App() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-6 justify-center">
             <button 
-              className="bg-white hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font backdrop-blur-sm"
+              className="bg-white/20 hover:bg-teal-500 text-gray-800 hover:text-white font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 nice-font backdrop-blur-sm"
               onClick={() => window.open('https://en.wikipedia.org/wiki/L-system', '_blank')}
             >
               Curious about the background? Click here!
